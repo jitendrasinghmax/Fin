@@ -26,11 +26,6 @@ const ChatHeader = () => {
                         <div>{userName}</div>
                     </div>
                     <div className=" flex gap-x-2 justify-center items-center" >
-                        <div><CiStar /></div>
-                        <div className="px-3 h-6 rounded bg-gray-300  text-sm flex justify-center items-center"><HiDotsHorizontal /></div>
-                        <div className=" px-3 h-6 rounded bg-gray-300 text-sm flex justify-center items-center"><IoCall /></div>
-                        <div className=" px-3 h-6 rounded bg-gray-300 flex justify-center items-center text-sm"><IoMoonSharp />snooze</div>
-                        <div className=" px-2 h-6 rounded bg-black flex justify-between items-center text-white font-semibold text-sm">close</div>
                         <div className="">
                             <div
                                 onClick={() => setShowTabState(true)}

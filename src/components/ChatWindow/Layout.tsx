@@ -7,6 +7,7 @@ import ChatWindow from "./ChatWindow"
 import gsap from "gsap"
 import { useRecoilState } from "recoil"
 import { showTabAtom } from "../../recoil/recoil"
+import { IoIosArrowDropdownCircle } from "react-icons/io"
 
 export const ChatLayout = () => {
         const ref=useRef<HTMLDivElement>(null);
@@ -40,7 +41,7 @@ export const ChatLayout = () => {
             </div>
         </div>
         {isMobile === true && <div ref={ref} className="absolute w-full h-2/3 border-4 rounded-t-2xl ">
-        <div onClick={()=>setShowTabState(false)} className="text-2xl flex flex-col justify-center items-center font-bold cursor-pointer bg-white">^</div>
+        <div onClick={()=>setShowTabState(false)} className="text-2xl flex flex-col justify-center items-center font-bold cursor-pointer bg-white text-gray-500"><IoIosArrowDropdownCircle/></div>
             <AssitanceLayout />
         </div>}
     </>
