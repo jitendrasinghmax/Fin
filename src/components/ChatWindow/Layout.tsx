@@ -40,7 +40,7 @@ export const ChatLayout = () => {
                 <div className="row-span-2  flex justify-end relative"><ChatInputBox /></div>
             </div>
         </div>
-        {isMobile === true && <div ref={ref} className="absolute w-full h-2/3 border-4 rounded-t-2xl overflow-hidden ">
+        {isMobile === true && <div ref={ref} className="absolute w-full h-2/3 border-4 bg-white rounded-t-2xl overflow-hidden ">
         <div onClick={()=>setShowTabState(false)} className=" w-full flex flex-col justify-center items-center font-bold cursor-pointer  text-gray-500 text-xl"><IoIosArrowDropdownCircle/></div>
             <AssitanceLayout />
         </div>}
