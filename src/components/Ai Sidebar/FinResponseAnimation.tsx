@@ -16,7 +16,7 @@ export const FinResponseWithAnimation = ({msg}:{msg:string}) => {
                 return;
             }
             setSteps((prev: React.ReactElement[]) => {
-                return [...prev,<div className="flex text-xl gap-x-2"><MdOutlineMessage className="my-auto"/><div className="my-auto">{steps[prev.length]}</div></div>]
+                return [...prev,<div className="flex gap-x-2"><MdOutlineMessage className="my-auto"/><div className="my-auto">{steps[prev.length]}</div></div>]
             })
             length++;
         }, 700)
