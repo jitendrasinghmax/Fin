@@ -14,7 +14,7 @@ This project is an AI-powered sidebar assistant built with React, TypeScript, an
 
 ## Project Links
 
-- **GitHub Repository:** [https://github.com/jitendrasinghmax/Fin](https://github.com/jitendrasinghmax/Fin)
+
 - **Live Demo (Vercel):** [https://fin-seven.vercel.app/](https://fin-seven.vercel.app/)
 
 ## Screenshots
