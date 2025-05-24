@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
 import { copilotGenText, selectedUserAtom } from "../../recoil/recoil";
 
 const ChatInputBox = () => {
     const [input, setInput] = useState<string>("");
-    const [genText,setGenText]=useRecoilState<string>(copilotGenText)
+    const genText=useRecoilValue<string>(copilotGenText)
     const ref = useRef<HTMLTextAreaElement>(null);
     const selected=useRecoilValue(selectedUserAtom)
     // Adjust textarea height dynamically, allowing both expand and contract
