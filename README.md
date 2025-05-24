@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# Fin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an AI-powered sidebar assistant built with React, TypeScript, and Vite. It features a modern UI inspired by productivity tools, with support for user assignment, team management, quick links, and expandable data sections. The design is fully responsive, providing a seamless experience on both desktop and mobile devices.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – UI library for building user interfaces
+- **TypeScript** – Strongly typed JavaScript
+- **Vite** – Fast frontend build tool
+- **Tailwind CSS** – Utility-first CSS framework
+- **React Router DOM** – Client-side routing
+- **React Icons** – Icon library for React
+- **Vercel** – Deployment and hosting
 
-## Expanding the ESLint configuration
+## Project Links
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **GitHub Repository:** [https://github.com/jitendrasinghmax/Fin](https://github.com/jitendrasinghmax/Fin)
+- **Live Demo (Vercel):** [https://fin-seven.vercel.app/](https://fin-seven.vercel.app/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Screenshots
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Desktop Version
+![Desktop Screenshot](./src/assets/demo/desktopss.png)
+![Desktop Screenshot](./src/assets/demo/desktop.gif)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Mobile Version
+<div style="display: inline-flex; gap: 16px; align-items: flex-start;">
+  <img src="./src/assets/demo/mobile_ss1.gif" alt="Mobile Demo GIF 1" style="max-width: 200px; border-radius: 8px;" />
+  <img src="./src/assets/demo/mobile_ss2.gif" alt="Mobile Demo GIF 2" style="max-width: 200px; border-radius: 8px;" />
+</div>
+
