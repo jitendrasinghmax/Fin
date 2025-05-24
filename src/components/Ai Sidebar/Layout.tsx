@@ -12,8 +12,8 @@ export const AssitanceLayout = () => {
     const activeTabeStyle = "border-b-2 border-blue-500 bg-gradient-to-r from-sky-700 to-rose-50 bg-clip-text text-transparent"
     const inactiveTabStyle = ""
     return (<>
-        <div className="h-full w-full flex flex-col">
-            <div className="h-12 w-full border-b flex items-center gap-x-3 px-4">
+        <div className="h-full w-full flex flex-col bg-white ">
+            <div className="h-12 w-full border-b flex items-center gap-x-3 px-4 bg-white">
                 <div onClick={() => handleTabChange("AI Copilot")}
                     className={`h-full flex items-center ${tab === "AI Copilot" ? activeTabeStyle : inactiveTabStyle}`}>AI Copilot</div>
                 <div onClick={() => handleTabChange("Details")}

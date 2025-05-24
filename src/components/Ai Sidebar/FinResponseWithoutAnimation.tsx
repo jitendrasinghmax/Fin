@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react"
 import { TextWithOutAnnimation } from "./text Response/textWithoutAnimation";
+import { MdOutlineMessage } from "react-icons/md";
 export const steps = ["Getting a refund", "Refund fron an oder placed by mistake", "Refund for an unwanted gift"];
 export const FinResponseWithoutAnimation = ({msg}:{msg:string}) => {
     const [step, setSteps] = useState<React.ReactElement[]>([]);
@@ -14,7 +15,7 @@ export const FinResponseWithoutAnimation = ({msg}:{msg:string}) => {
                 return;
             }
             setSteps((prev: React.ReactElement[]) => {
-                return [...prev,<div>{steps[prev.length]}</div>];
+                return [...prev,<div className="flex text-xl gap-x-2"><MdOutlineMessage className="my-auto"/><div className="my-auto">{steps[prev.length]}</div></div>];
             })
             length++;
         },0)
@@ -32,7 +33,7 @@ export const FinResponseWithoutAnimation = ({msg}:{msg:string}) => {
             <div className="pl-10">
                 <TextWithOutAnnimation msg={msg}/>
                 {step.map((item) => {
-                    return <div>{item}</div>
+                    return <div className="" >{item}</div>
                 })}
             </div>
         </div>

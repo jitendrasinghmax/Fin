@@ -10,7 +10,7 @@ const AIMessageWindow = () => {
     if (messages.length === 0) {
         return <>
             
-            <div className="h-full w-full">
+            <div className="h-full w-full overflow-auto">
                 <div className="h-full w-full flex flex-col justify-center items-center">
                     <h1 className="text-gray-700 font-bold text-xl">Hi, I'm Fin AI Copilot</h1>
                     <h1 className="text-gray-400 font-semibold text-sm">Ask Me Anything About This Conversation</h1>
@@ -19,7 +19,7 @@ const AIMessageWindow = () => {
         </>;
     }
     return (<>
-        <div className="h-full w-full flex flex-col py-2">
+        <div className="h-full w-full flex flex-col py-2 overflow-auto">
             {
                 messages.map((item)=>{
                     if(item.type==="question"){

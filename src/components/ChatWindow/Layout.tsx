@@ -41,7 +41,7 @@ export const ChatLayout = () => {
             </div>
         </div>
         {isMobile === true && <div ref={ref} className="absolute w-full h-2/3 border-4 rounded-t-2xl ">
-        <div onClick={()=>setShowTabState(false)} className="text-2xl flex flex-col justify-center items-center font-bold cursor-pointer bg-white text-gray-500"><IoIosArrowDropdownCircle/></div>
+        <div onClick={()=>setShowTabState(false)} className=" w-full flex flex-col justify-center items-center font-bold cursor-pointer bg-white text-gray-500 text-xl"><IoIosArrowDropdownCircle/></div>
             <AssitanceLayout />
         </div>}
     </>
