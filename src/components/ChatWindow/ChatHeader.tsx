@@ -17,19 +17,19 @@ const ChatHeader = () => {
 
     if (isMobile === true) {
         return <div className="h-12 text-2xl text-gray-700 px-2 font-bold pb-3 border-b-2 flex justify-between items-center">
-            <div className=" flex-1 flex items-center py-4">
+            <div className=" flex-1 flex justify-center items-center py-4">
 
                 <div className=" flex-1 flex justify-between items-center">
-                    <div className="flex">
+                    <div className="flex items-center">
                         <button onClick={() => navigate('/')} className="border-2 shadow-lg rounded-md font-semibold px-2 mt-2 mx-2"><IoMdArrowRoundBack />
                         </button>
                         <div>{userName}</div>
                     </div>
                     <div className=" flex gap-x-2 justify-center items-center" >
-                        <div className="">
+                        <div className="py-4">
                             <div
                                 onClick={() => setShowTabState(true)}
-                                className="taext-lg text-white font-semibold bg-gray-800 rounded-md px-4 py-1 mt-2">Fin</div>
+                                className="text-lg h-7 flex justify-center items-center text-white font-semibold bg-gray-800 rounded-md px-4 py-1 mt-2">Fin</div>
                         </div>
                     </div>
                 </div>

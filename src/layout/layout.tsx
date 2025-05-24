@@ -9,7 +9,7 @@ export const Layout = () => {
     console.log(isMobile)
     if (isMobile === true) {
         return <>
-                <div className="h-screen relative">
+                <div className="h-screen relative overflow-hidden">
                     <Routes>
                         <Route path='/' element={<Sidebar/>}></Route>
                         <Route path='/chatbox' element={<ChatLayout/>}></Route>
